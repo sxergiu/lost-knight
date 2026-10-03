@@ -30,13 +30,14 @@ Level I–IV, EndScreen.
 
 - **Comments are lost.** Code comments and some formatting could not be recovered.
   The logic, field names and `[SerializeField]` values are intact.
-- **Packages are DLLs.** TextMeshPro, uGUI, 2D Animation/IK/SpriteShape/PixelPerfect,
-  Timeline and Mathematics are in `Assets/Plugins` as runtime DLLs, not
-  Package Manager packages. Scenes reference them by these DLLs, so leave them in
-  place. Because of this, editor tooling for those packages (such as the TMP font
-  asset creator or the Sprite Editor's skinning module) is not available.
-  Switching back to real packages requires remapping script references in every
-  scene and prefab.
+- **Packages.** The build shipped TextMeshPro and uGUI as compiled DLLs. These were
+  replaced with the real Package Manager packages (`com.unity.textmeshpro` 3.0.6 and
+  `com.unity.ugui` 1.0.0). Every scene, animation and asset reference was remapped from
+  the DLL classes to the package scripts. Eleven more package DLLs in the build
+  (Newtonsoft.Json, 2D Animation/IK/SpriteShape/PixelPerfect, Timeline, Mathematics and
+  others) were not used by anything in the game, so they were removed. Add those
+  packages through Package Manager if you need them. `com.unity.2d.sprite` and
+  `com.unity.2d.tilemap` were added for the Sprite Editor and Tile Palette.
 - **TextMeshPro shaders** were replaced with the real TMP 3.0.6 shader sources,
   because AssetRipper only produces placeholder shaders. Their GUIDs are unchanged.
 - **Import settings and folders.** Asset import settings (compression, filter mode,
