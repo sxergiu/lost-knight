@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - cherry
+  - TRAP
+  - Ladder
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: verybehind
+    uniqueID: 1264206859
+    locked: 0
+  - name: background1
+    uniqueID: 2784469409
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: DECOsec
+    uniqueID: 3145461943
+    locked: 0
+  - name: DECO
+    uniqueID: 2685459231
+    locked: 0
+  - name: background2
+    uniqueID: 144396517
+    locked: 0
+  - name: trap
+    uniqueID: 381049131
+    locked: 0
+  - name: ground
+    uniqueID: 4182831421
+    locked: 0
+  - name: trap2
+    uniqueID: 2612876341
+    locked: 0
+  - name: fakeground
+    uniqueID: 3297913705
+    locked: 0
+  - name: PLAYER
+    uniqueID: 2255314549
+    locked: 0
+  - name: Secrets
+    uniqueID: 2599526051
+    locked: 0
+  - name: secrets2
+    uniqueID: 3855685463
+    locked: 0
